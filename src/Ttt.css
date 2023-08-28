@@ -1,0 +1,93 @@
+/* Ttt.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Neuzeit&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #3498db, #2980b9);
+  font-family: 'Neuzeit', sans-serif;
+  color: white;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.gameContainer {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.table {
+  border-collapse: collapse;
+  width: 300px;
+}
+
+.cell {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cell-x {
+  background-color: #ecf0f1;
+  color: #3498db;
+  font-size: 96px;
+}
+
+.cell-o {
+  background-color: #ecf0f1;
+  font-size: 48px;
+}
+
+.cellButton {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.statusText {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.clearButton {
+  margin-bottom: 20px;
+}
+
+.clearButtonInput {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.clearButtonInput:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
